@@ -1,0 +1,54 @@
+New chat
+
+Qineoee
+
+prs = Presentation()
+stide = prs,stides.add_stidelprs.stide_tayouts[9])
+titte = stide-shapes.titte
+
+subtitte = stide.placehotders[1]
+
+titte.text
+subtitte.text
+
+业
+    "AT自动生成PPT样例 -数据与趋势分析"           em
+
+这样你就能先生成几千份 Al 模拟的 PPT 内容，完全合规可控。
+9 Ask ChatGPT
+
+能源行业年度汇报"
+
+回内容授权合作
+联系像 jpptcom、51ppt、tukuppt、能猫办公等网站
+
+。 提供他们 API 接口或品牌曝光;
+。 你帮他们导流、他们授权部分模板内容给你使用;
+* 这在国内是比较现实的 B2B 合作方式。
+
+名四、建议你的实际落地路径
+
+1. 先用开源 | Al生成模板构建 5000-10000 份基础库;
+2对这些模板做embedding、标签生成、语义检索系统;
+3. 上线 MVP 产品，测试用户搜索体验;
+
+4再以此成果去谈版权站点的合作或内容采购
+
+99 Ask ChatGPT
+
+， 总结一句话:
+于 “不要抓取别人的内容，要用 Al 和授权内容创造你自己的语义PPT生态.”
+
+如果你愿意，我可以帮你
+* 制定一份《合法PPT内容获取与自动生成策略文档 (含脚本样例)》，
+。 或者直接帮你写出 【AI自动生成PPT内容并Embedding) 的完整pipeline框架。
+
+你希望我帮你做哪一种? (策略文档/代码pipeline)
+
+十 日Enendedthnkne ~                   2 人
+
+ChatGPT can make mistakes, Check importantinfo,
+
+7
+
+tc

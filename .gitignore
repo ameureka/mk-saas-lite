@@ -42,3 +42,4 @@ Thumbs.db
 # Debug
 *.log
 logs/
+*.pdf

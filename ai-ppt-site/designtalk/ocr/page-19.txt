@@ -1,0 +1,94 @@
+装 三、PPT内容的Embedding 处理流程
+
+加提取PPT内容 (Text)
+， 使用 Python-pptX 或 Aspase,5tides 提取所有文字层;
+， 只保
+。 段落文字;
+， 图表标题;
+， 页面备注;
+文件名与目录;
+。 如果模板是纯图像页，可以OCR提取文字(如百度OCR或PaddleOCR) 。
+
+每个PPT最终生成一个 text summary {200~505 \革右) ，再送入Embedding模型，
+
+[和
+回生成Embedding (语义向量)
+
+使用 Open 99 Ask ChatGpT |text-embedding-3-small1large
+
+模型                         优点
+text-embedding-3-smat             快、便宜，适合百万级PPT
+text-embedding-3-targe            语义更准，适合VIP推荐/问答功能
+存储方案:
+* 每个PPT生成1条向量;
+。 附带元数据字段:
+
+{
+
+"id": "ppt_12345"，
+"titte": "2925新能源行业报告"，
+summary'
+
+ww
+
+和缺点
+精度略低
+
+成本较高
+
+回 copy code
+
+人
+
+urerrafEEpsiyyyourppr'comrremptarer leaqo
+"embedding": [9.123，-9.543，.….]
+】}
+
+9 Ask ChatGPT
+
+回 向量数据库选型 (按规模选)
+
+ee
+
+场景                    推荐方案                       特点
+
+< 50万文件               FAISS (本地库)                 简单、高速、离线即可运行
+
+50万-二万               Milvus 1Qdrant                 分布式、支持云部署、性能稳定
+Saas化1Serverless         Pinecone 1 Weaviate cloud         最快实现，按量付费，无需运维
+
+所 若你计划后给外部开放API，建议选 Milvus + MinlO (兼容COS存储) ，更灵活。
+
+业
+写四、语义检索 + 排序策略
+
+用广御八一往蒜子排所
+
+1. 用户输入文本:
+
+9 Ask ChatGPT 格的商务汇报模板"
+2. 将输入文本进行 Embedding:
+
+3. 检索向量库中最相似的若干PPT;
+
+4- 根据以下权重综合排序
+
+markdown
+
+retevance_score = 9.6 # Semantic_simitarity
++ 9.2 *# 点击热度
++ 9.1 * 收藏数
+
+6.1 * 上传时间衰减系数
+
+5 输出最终Top N结果。
+
+党五、内容自动摘要 + 标签体系 (AI自动了
+
+om ，
+
+回 copy code
+
+4
+
+3
